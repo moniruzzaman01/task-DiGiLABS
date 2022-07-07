@@ -3,8 +3,10 @@ import Home from "./Pages/Home";
 
 function App() {
   return (
-    <div className=" max-w-[1440px] mx-auto">
-      <Home />
+    <div className="bg-[#F5F5F5] min-h-screen ">
+      <div className=" max-w-[1440px] mx-auto bg-white pb-16 ">
+        <Home />
+      </div>
     </div>
   );
 }
