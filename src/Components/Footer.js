@@ -41,14 +41,16 @@ const Footer = () => {
             in your mailbox. Unsubscribe whenever you like with one click.
           </p>
           <div className=" relative">
-            <input
-              className=" px-12 py-4 h-12 rounded-full w-full bg-[#343538] "
-              type="email"
-              placeholder="Enter your email"
-            />
-            <button className=" absolute right-0 py-3 px-8 rounded-full bg-[#537ce6] text-white font-bold ">
-              Submit
-            </button>
+            <div className=" flex items-center">
+              <input
+                className=" px-12 py-4 h-12 rounded-full w-full bg-[#343538] "
+                type="email"
+                placeholder="Enter your email"
+              />
+              <button className=" absolute right-2 py-1 px-5 rounded-full bg-[#537ce6] text-white font-bold ">
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>

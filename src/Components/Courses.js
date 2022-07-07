@@ -14,8 +14,11 @@ const Courses = () => {
       </p>
       <div className=" relative ">
         <div className=" flex gap-8 items-center overflow-x-hidden h-[350px] mr-16">
-          {[1, 2, 3, 4].map((a) => (
-            <div className=" h-[312px] min-w-[282px] rounded-lg shadow-xl ">
+          {[1, 2, 3, 4].map((a, index) => (
+            <div
+              key={index}
+              className=" h-[312px] min-w-[282px] rounded-lg shadow-xl "
+            >
               <img src={img} alt="" />
               <div className=" px-5 ">
                 <p className=" font-bold ">
