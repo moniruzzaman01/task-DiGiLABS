@@ -55,24 +55,24 @@ const Footer = () => {
         </div>
       </div>
       <div className=" text-[#8c8c8c] text-[14px] flex justify-between  px-[150px]">
-        <span>About us</span>
-        <span>Jobs</span>
-        <span>Blog</span>
-        <span>Press</span>
-        <span>FAQ</span>
-        <span>Careers</span>
-        <span>Contact</span>
-        <span>Privacy policy</span>
-        <span>Sitemap</span>
-        <span>Terms of Use</span>
+        <span className=" cursor-pointer">About us</span>
+        <span className=" cursor-pointer">Jobs</span>
+        <span className=" cursor-pointer">Blog</span>
+        <span className=" cursor-pointer">Press</span>
+        <span className=" cursor-pointer">FAQ</span>
+        <span className=" cursor-pointer">Careers</span>
+        <span className=" cursor-pointer">Contact</span>
+        <span className=" cursor-pointer">Privacy policy</span>
+        <span className=" cursor-pointer">Sitemap</span>
+        <span className=" cursor-pointer">Terms of Use</span>
       </div>
       <div className=" flex justify-between items-center px-[150px] mt-12 ">
         <div className=" flex gap-3">
-          <img src={facebook} alt="" />
-          <img src={youtube} alt="" />
-          <img src={browser} alt="" />
-          <img src={figma} alt="" />
-          <img src={whatsApp} alt="" />
+          <img className=" cursor-pointer" src={facebook} alt="" />
+          <img className=" cursor-pointer" src={youtube} alt="" />
+          <img className=" cursor-pointer" src={browser} alt="" />
+          <img className=" cursor-pointer" src={figma} alt="" />
+          <img className=" cursor-pointer" src={whatsApp} alt="" />
         </div>
         <p className=" text-[14px] text-[#8c8c8c] ">
           © 2000-2021, All Rights Reserved
