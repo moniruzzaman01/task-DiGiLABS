@@ -49,7 +49,7 @@ const Testimonial = () => {
                   className=" min-w-[700px] mx-auto text-center bg-slate-50 pb-5 mt-5 rounded-lg "
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
+                  transition={{ duration: 0.5 }}
                 >
                   <img
                     className=" rounded-full mx-auto mt-20"

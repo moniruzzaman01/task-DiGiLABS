@@ -4,6 +4,7 @@ import img2 from "../assets/Vector (1).png";
 import img3 from "../assets/Group.png";
 import img4 from "../assets/fa-solid_chalkboard-teacher.png";
 import img5 from "../assets/carbon_view-filled.png";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -21,19 +22,29 @@ const Services = () => {
       </div>
       <div className=" flex-1 grid grid-cols-2 gap-16">
         {/* service 1 */}
-        <div className=" flex items-center gap-8 w-[285px] ">
+        <motion.div
+          className=" flex items-center gap-8 w-[285px] "
+          initial={{ y: "100%" }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <span className=" text-[#ffad3b] ">Live Exams</span>
           <div className=" h-[200px] min-w-[200px] bg-[#ffad3b] bg-opacity-10 rounded-full flex justify-center items-center ">
             <img src={img1} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* service 2 */}
-        <div className=" flex items-center gap-8 w-[285px] translate-y-[50%] ">
+        <motion.div
+          className=" flex items-center gap-8 w-[285px] translate-y-[50%] "
+          initial={{ y: "100%" }}
+          animate={{ y: "50%" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className=" text-[#EB5757] ">1000+ Lessons</span>
           <div className=" h-[200px] min-w-[200px] bg-[#EB5757] bg-opacity-10 rounded-full flex justify-center items-center ">
             <img src={img2} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* service 3 */}
         <div className=" flex items-center gap-8 w-[285px] ">
           <span className=" text-[#2D81F7] ">Live Classes</span>
@@ -42,19 +53,29 @@ const Services = () => {
           </div>
         </div>
         {/* service 4 */}
-        <div className=" flex items-center gap-8 w-[285px] translate-y-[50%] ">
+        <motion.div
+          className=" flex items-center gap-8 w-[285px] translate-y-[50%] "
+          initial={{ y: "0" }}
+          animate={{ y: "50%" }}
+          transition={{ duration: 0.5 }}
+        >
           <span className=" text-[#08BD80] ">1000+ Lessons</span>
           <div className=" h-[200px] min-w-[200px] bg-[#08BD80] bg-opacity-10 rounded-full flex justify-center items-center ">
             <img src={img4} alt="" />
           </div>
-        </div>
+        </motion.div>
         {/* service 5 */}
-        <div className=" flex items-center gap-8 w-[285px] ">
+        <motion.div
+          className=" flex items-center gap-8 w-[285px] "
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <span className=" text-[#FE5702] ">100 K+ Views</span>
           <div className=" h-[200px] min-w-[200px] bg-[#FE5702] bg-opacity-10 rounded-full flex justify-center items-center ">
             <img src={img5} alt="" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
