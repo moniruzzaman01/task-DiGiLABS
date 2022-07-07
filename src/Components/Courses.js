@@ -3,7 +3,7 @@ import img from "../assets/Rectangle 5.png";
 
 const Courses = () => {
   return (
-    <div className=" mt-[95px] px-16">
+    <div className=" mt-[95px] px-16 mb-[100px]">
       <p className=" text-[18px] font-bold text-black mb-4 ">
         A broad range of courses
       </p>

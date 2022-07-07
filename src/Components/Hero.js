@@ -19,7 +19,7 @@ const Hero = () => {
             <h2 className=" text-white capitalize text-[32px] my-8 ">
               Unleash Your SCRUM Skills,Grab More Attention To Résumé
             </h2>
-            <span className=" border-2 px-5 py-1 font-bold rounded-full text-white uppercase ">
+            <span className=" border-2 px-5 py-1 font-bold rounded-full text-white uppercase cursor-pointer ">
               enroll now
             </span>
           </div>
