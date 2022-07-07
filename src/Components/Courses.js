@@ -1,6 +1,8 @@
 import React from "react";
 import img from "../assets/Rectangle 5.png";
 import right from "../assets/right-arrow.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Courses = () => {
   return (
@@ -26,8 +28,14 @@ const Courses = () => {
                 </p>
                 <span className=" text-[14px] my-4 ">Samay Jain, Ex-KPMG</span>
                 <div className=" text-[14px] my-4 ">
-                  <span>4.5</span>
-                  <span></span>
+                  <span className=" mr-2">5</span>
+                  <span className=" text-[#5f72be]">
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                    <FontAwesomeIcon icon={faStar} />
+                  </span>
                 </div>
                 <span className=" inline-block border-2 border-[#5f72be] px-5 py-1 font-bold rounded-full text-[#5f72be] uppercase cursor-pointer">
                   enroll now
