@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../assets/Rectangle 5.png";
+import right from "../assets/right-arrow.png";
 
 const Courses = () => {
   return (
@@ -30,8 +31,9 @@ const Courses = () => {
             </div>
           </div>
         ))}
-        <div className=" h-10 w-10 cursor-pointer border-2 border-[#5f72be] rounded-full">
-          <p className="text-xl text-center leading-8 font-bold ">{">"}</p>
+        <div className=" h-10 w-10 rounded-full flex items-center cursor-pointer">
+          <img className=" ml-4" src={right} alt="" />
+          {/* <p className="text-xl text-center leading-8 font-bold ">{">"}</p> */}
         </div>
       </div>
     </div>
