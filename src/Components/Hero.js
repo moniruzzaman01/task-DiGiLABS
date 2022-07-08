@@ -6,11 +6,43 @@ import img2 from "../assets/Ellipse 2.png";
 import img3 from "../assets/Ellipse 3.png";
 import img4 from "../assets/Ellipse 4.png";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [Seconds, setSeconds] = useState("00");
+
+  const startTimer = () => {
+    const eventDate = new Date("jul 10 2022 00:00:00").getTime();
+    const interval = setInterval(() => {
+      const newDate = new Date().getTime();
+      const time = eventDate - newDate;
+      const d = Math.floor(time / (1000 * 60 * 60 * 24));
+      const h = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((time % (1000 * 60)) / 1000);
+      if (time < 0) {
+        clearInterval(interval);
+      } else {
+        setDays(d);
+        setHours(h);
+        setMinutes(m);
+        setSeconds(s);
+      }
+    }, 1000);
+  };
+
+  useEffect(() => {
+    startTimer();
+  }, []);
+
   return (
     <div className=" hero h-[704px] ">
       <Navbar />
+      {/* <h1>{newDate}</h1> */}
       <div className=" flex h-full pl-16 ">
         <div className=" flex-1 mt-32">
           <div>
@@ -46,20 +78,34 @@ const Hero = () => {
                 animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className=" text-[52px] font-bold ">02</h1>
+                <h1 className=" text-[52px] font-bold ">{days}</h1>
+                <span className=" text-[14px] block mt-[-15px] ">Days.</span>
+              </motion.div>
+              <motion.div
+                className=" h-[88px] w-[88px] bg-white bg-opacity-10 rounded-lg text-white "
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h1 className=" text-[52px] font-bold ">{hours}</h1>
                 <span className=" text-[14px] block mt-[-15px] ">Hrs.</span>
               </motion.div>
-              <div className=" h-[88px] w-[88px] bg-white bg-opacity-10 rounded-lg text-white ">
-                <h1 className=" text-[52px] font-bold ">58</h1>
-                <span className=" text-[14px] block mt-[-15px] ">Mins.</span>
-              </div>
               <motion.div
                 className=" h-[88px] w-[88px] bg-white bg-opacity-10 rounded-lg text-white "
                 initial={{ x: "-100%" }}
                 animate={{ x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1 className=" text-[52px] font-bold ">42</h1>
+                <h1 className=" text-[52px] font-bold ">{minutes}</h1>
+                <span className=" text-[14px] block mt-[-15px] ">Mins.</span>
+              </motion.div>
+              <motion.div
+                className=" h-[88px] w-[88px] bg-white bg-opacity-10 rounded-lg text-white "
+                initial={{ x: "-100%" }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h1 className=" text-[52px] font-bold ">{Seconds}</h1>
                 <span className=" text-[14px] block mt-[-15px] ">Secs.</span>
               </motion.div>
             </div>

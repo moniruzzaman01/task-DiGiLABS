@@ -19,8 +19,8 @@ const Testimonial = () => {
       id: 2,
       img: person,
       desc: "“lit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-      name: "Md. Danish Ansari 1",
-      position: "Learner, Govt. Employee @UPPCL",
+      name: "Md. ABC",
+      position: "Employee, Govt. Employee @UPPCL",
     },
     {
       id: 3,
